@@ -42,7 +42,7 @@ const Navbar = () => {
             <div className="relative">
                
                 {/* Main Navbar */}
-                <div className="relative bg-white/30 dark:bg-black/10 backdrop-blur-md border border-white/30 dark:border-white/10 rounded-full px-10 py-3 ">
+                <div className="relative bg-white/30 dark:bg-black/10 backdrop-blur-md border border-black/10 dark:border-white/10 rounded-full px-10 py-3 ">
                     <div className="flex items-center justify-between gap-12">
 
                         {/* Logo with Dot Animation */}
