@@ -1,2 +1,17 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* Logo ticker keyframes and utilities */
+@keyframes ticker-scroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-anim {
+  animation: ticker-scroll 30s linear infinite;
+  width: 200%;
+}
+
+.ticker-paused:hover .ticker-anim {
+  animation-play-state: paused;
+}
