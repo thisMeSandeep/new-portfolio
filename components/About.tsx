@@ -3,6 +3,7 @@
 import { IconDownload, IconMail, IconMapPin, IconExternalLink } from '@tabler/icons-react'
 import { motion } from 'motion/react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const About = () => {
   return (
@@ -106,11 +107,12 @@ const About = () => {
           >
             <div className="relative group">
               <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 dark:from-slate-800/80 dark:via-slate-700/60 dark:to-slate-800/80 p-6 shadow-xl dark:shadow-2xl border dark:border-slate-700/50">
-                <motion.img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face"
+                <Image
+                  src="/mypic.jpg"
                   alt="Sandeep Singh Nayal"
+                  width={800}
+                  height={600}
                   className="w-full h-96 object-cover rounded-xl shadow-2xl group-hover:scale-105 transition-transform duration-700 ease-out"
-                  whileHover={{ scale: 1.02 }}
                 />
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/30 dark:from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
