@@ -1,8 +1,11 @@
+import ThemeToggler from "./ThemeToggler"
 
 
 const Hero = () => {
   return (
-    <div className="h-screen bg-green-500">Hero</div>
+    <div className="h-screen bg-white dark:bg-slate-900">
+    
+    </div>
   )
 }
 
