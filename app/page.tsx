@@ -1,14 +1,13 @@
-import ApiIcon from "@/assets/icons/api.svg";
+import About from "@/components/About"
+import Hero from "@/components/Hero"
 
 const page = () => {
-
- console.log(typeof ApiIcon);
-
   return (
     <div>
-      <ApiIcon className="w-10 h-10 text-green-700" />
+      <Hero />
+      <About />
     </div>
-  );
-};
+  )
+}
 
-export default page;
+export default page
