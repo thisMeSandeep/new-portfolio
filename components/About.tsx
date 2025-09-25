@@ -149,7 +149,7 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                Hi there! I'm <span className="font-semibold text-slate-900 dark:text-slate-100">Sandeep Singh Nayal</span>,
+                Hi there! I&apos;m <span className="font-semibold text-slate-900 dark:text-slate-100">Sandeep Singh Nayal</span>,
                 a passionate full-stack developer who loves turning complex problems into simple,
                 beautiful solutions. With over a year of hands-on experience, I specialize in
                 building modern web applications that make a difference.
@@ -163,7 +163,7 @@ const About = () => {
                 viewport={{ once: true }}
               >
                 My journey in web development started with curiosity and has evolved into a
-                passion for creating seamless user experiences. I'm proficient in the MERN
+                passion for creating seamless user experiences. I&apos;m proficient in the MERN
                 stack and Next.js, always eager to learn new technologies and tackle challenging projects.
               </motion.p>
 
@@ -174,7 +174,7 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 viewport={{ once: true }}
               >
-                When I'm not coding, you'll find me exploring the latest tech trends,
+                When I&apos;m not coding, you&apos;ll find me exploring the latest tech trends,
                 contributing to open-source projects, or sharing knowledge with the developer community.
                 I believe in writing clean, maintainable code and creating applications that users love.
               </motion.p>
