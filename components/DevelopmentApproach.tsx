@@ -270,7 +270,7 @@ const DevelopmentApproach = () => {
                                 Ready to bring your ideas to life?
                             </p>
                             <p className="text-sm text-gray-600 dark:text-gray-300">
-                                Let's build something amazing together
+                                Let&apos;s build something amazing together
                             </p>
                         </div>
                     </div>
