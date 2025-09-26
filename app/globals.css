@@ -3,8 +3,12 @@
 
 /* Logo ticker keyframes and utilities */
 @keyframes ticker-scroll {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .ticker-anim {
@@ -14,4 +18,80 @@
 
 .ticker-paused:hover .ticker-anim {
   animation-play-state: paused;
+}
+/* Floating Stars Background */
+.stars-bg {
+  position: absolute;
+  inset: 0;
+  background: #fff; /* light mode base */
+  overflow: hidden;
+}
+
+.dark .stars-bg {
+  background: #111; /* dark mode base */
+}
+
+/* Create multiple star layers */
+.stars-bg::before,
+.stars-bg::after,
+.stars-bg .stars {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-repeat: repeat;
+  background-size: 2px 2px;
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  animation: floatStars linear infinite;
+}
+
+/* Different layers for parallax */
+.stars-bg::before {
+  color: rgba(0, 0, 0, 0.5); /* light mode stars */
+  animation-duration: 120s;
+}
+
+.dark .stars-bg::before {
+  color: rgba(255, 255, 255, 0.8); /* dark mode stars */
+}
+
+.stars-bg::after {
+  color: rgba(0, 0, 0, 0.3);
+  animation-duration: 200s;
+}
+
+.dark .stars-bg::after {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.stars-bg .stars {
+  color: rgba(0, 0, 0, 0.2);
+  animation-duration: 300s;
+}
+
+.dark .stars-bg .stars {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* Animation for vertical floating */
+@keyframes floatStars {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(-1000px) translateX(-500px);
+  }
+}
+
+
+.arrow-slide-x {
+  display: inline-block;
+  animation: arrow-slide-x 1s infinite ease-in-out;
+}
+
+@keyframes arrow-slide-x {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
 }

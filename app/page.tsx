@@ -1,4 +1,5 @@
 import About from "@/components/About"
+import ContactSection from "@/components/ContactSection"
 import DevelopmentApproach from "@/components/DevelopmentApproach"
 import Hero from "@/components/Hero"
 import Projects from "@/components/Projects"
@@ -11,7 +12,8 @@ const page = () => {
       <About />
       <Skills />
       <DevelopmentApproach />
-      <Projects/>
+      <Projects />
+      <ContactSection />
     </div>
   )
 }

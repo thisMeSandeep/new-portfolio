@@ -3,13 +3,6 @@ const projects = [
     title: "Devwork - A Freelancer Platform for Developers",
     description:
       "A freelancing platform for developers. It allows users to post jobs, find work and search for freelancers, and manage their work.",
-    features: [
-      "Separate pages for developers and freelancers",
-      "Role based authentication",
-      "Job posting and with AI assistance",
-      "Find jobs , send proposal and get hired",
-      "Manage jobs and proposal",
-    ],
     technologies: [
       "Next js",
       "TypeScript",
@@ -32,13 +25,6 @@ const projects = [
     title: "Fundly - Personal Finance Management Tool",
     description:
       "A smart and intuitive finance management app that helps users track income and expenses, categorize transactions, view insightful analytics, and gain control over their financial goals.",
-    features: [
-      "Intuitive and user-friendly interface",
-      "JWT based authentication",
-      "Track personal finance",
-      "Get AI analysis of your finances",
-      "Chat with fundly bot for smart financial advice",
-    ],
     technologies: [
       "TypeScript",
       "React",
@@ -60,14 +46,7 @@ const projects = [
   {
     title: "DropCart-E-Commerce Platform",
     description:
-      "A full-stack e-commerce solution built with the MERN stack. Features include product search, filtering, user authentication, shopping cart,Wishlist, payment processing with razorpay, and  order tracking.",
-    features:[
-        "Product search and filtering",    
-        "User authentication with JWT based authentication",
-        "Shopping cart management and order management",
-        "Payment integration using razorpay",
-        "Product category management", 
-    ],  
+      "A full-stack e-commerce solution built with the MERN stack. Features include product search, filtering, user authentication, shopping cart,Wishlist, payment processing with razorpay, and  order tracking.",  
     technologies: [
       "React",
       "Node.js",
