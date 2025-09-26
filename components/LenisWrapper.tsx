@@ -8,8 +8,8 @@ const LenisWrapper = ({ children }: { children: React.ReactNode }) => {
             root
             options={{
                 lerp: 0.08,
-                wheelMultiplier: 1.4,
-                touchMultiplier: 1.8,
+                wheelMultiplier: 1.1,
+                touchMultiplier: 1.1,
                 syncTouch: true,
             }}
         >
