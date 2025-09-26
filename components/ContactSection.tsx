@@ -32,9 +32,9 @@ const ContactSection = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <p className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">Get in Touch</p>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight mb-4 text-gray-900 dark:text-white">Let's Connect</h2>
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight mb-4 text-gray-900 dark:text-white">Let&#39;s Connect</h2>
                     <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                        Have a project in mind or just want to say hello? I'd love to hear from you.
+                        Have a project in mind or just want to say hello? I&#39;d love to hear from you.
                     </p>
                 </div>
 
@@ -43,7 +43,7 @@ const ContactSection = () => {
                     <div className="space-y-8">
                         <div>
                             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Reach Out</h3>
-                            <p className="text-gray-600 dark:text-gray-400">Whether you have a question or want to collaborate, feel free to contact me. I'm happy to connect!</p>
+                            <p className="text-gray-600 dark:text-gray-400">Whether you have a question or want to collaborate, feel free to contact me. I&#39;m happy to connect!</p>
                         </div>
 
                         {/* Info Cards */}
