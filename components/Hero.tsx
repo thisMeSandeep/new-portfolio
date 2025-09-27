@@ -2,9 +2,8 @@
 
 import { IconCode, IconDownload, IconArrowRight } from '@tabler/icons-react'
 import { FlipWords } from './ui/flip-words'
-import { motion } from 'motion/react'
 import Link from 'next/link'
-
+import {motion} from "motion/react"
 const words = ["Frontend", "Backend", "Mobile", "Full Stack"]
 
 const Hero = () => {

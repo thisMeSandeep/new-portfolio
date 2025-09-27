@@ -1,6 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Performance optimizations
+  experimental: {
+    optimizePackageImports: ['@tabler/icons-react', 'lucide-react'],
+  },
+  images: {
+    formats: ['image/webp', 'image/avif'],
+    minimumCacheTTL: 60,
+  },
   webpack(config) {
     const excludeSvgFromRule = (rule: any) => {
       if (!rule) return;

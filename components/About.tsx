@@ -9,21 +9,13 @@ const About = () => {
   return (
     <section id="about" className="relative py-20 lg:py-32 bg-slate-50 dark:bg-gradient-to-br dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 overflow-hidden">
 
-      {/* Animated Grid Pattern */}
+      {/*  Grid Pattern  */}
       <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.1]">
-        <motion.div
+        <div
           className="w-full h-full"
           style={{
             backgroundImage: 'linear-gradient(rgba(148, 163, 184, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.2) 1px, transparent 1px)',
             backgroundSize: '60px 60px'
-          }}
-          animate={{
-            backgroundPosition: ['0px 0px', '60px 60px']
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear"
           }}
         />
       </div>
@@ -96,6 +88,9 @@ const About = () => {
                   width={800}
                   height={600}
                   className="w-full h-96 object-cover rounded-xl shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 ease-out"
+                  priority={true}
+                  loading="eager"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/20 dark:from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>

@@ -54,6 +54,9 @@ export default function Projects() {
                                     alt={project.title}
                                     fill
                                     className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                    priority={false}
+                                    loading="lazy"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
                                 <div className={`absolute inset-0 bg-gradient-to-t ${project.accent} opacity-10`} />
                                 <div className="absolute top-4 right-4 w-10 h-10 bg-white/90 dark:bg-slate-900/90 rounded-full flex items-center justify-center">

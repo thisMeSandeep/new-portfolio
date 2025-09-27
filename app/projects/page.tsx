@@ -1,4 +1,4 @@
-import { IconCode, IconBrandGithub, IconExternalLink, IconArrowLeft, IconStar, IconEye, IconCalendar } from "@tabler/icons-react"
+import { IconBrandGithub, IconExternalLink, IconArrowLeft } from "@tabler/icons-react"
 import Image from "next/image"
 import Link from "next/link"
 import projects from "@/data/projects"

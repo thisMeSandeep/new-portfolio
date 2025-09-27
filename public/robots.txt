@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sandeepsinghnayal.dev/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Block specific paths if needed
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow important pages
+Allow: /
+Allow: /projects
+Allow: /about
+Allow: /contact
