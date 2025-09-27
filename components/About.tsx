@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <section className="relative py-20 lg:py-32 bg-slate-50 dark:bg-gradient-to-br dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 overflow-hidden">
+    <section id="about" className="relative py-20 lg:py-32 bg-slate-50 dark:bg-gradient-to-br dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 overflow-hidden">
 
       {/* Animated Grid Pattern */}
       <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.1]">
@@ -100,7 +100,7 @@ const About = () => {
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/20 dark:from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              {/* Simplified Location Badge */}
+              {/* Location Badge */}
               <div className="absolute -bottom-6 -right-6 bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm border border-slate-200/60 dark:border-slate-600/80 rounded-xl px-4 py-3 shadow-xl dark:shadow-2xl">
                 <div className="flex items-center gap-2">
                   <IconMapPin className="w-5 h-5 text-blue-600 dark:text-blue-400" />
@@ -145,7 +145,7 @@ const About = () => {
               >
                 My journey in web development started with curiosity and has evolved into a
                 passion for creating seamless user experiences. I&apos;m proficient in the MERN
-                stack and Next.js, always eager to learn new technologies and tackle challenging projects.
+                stack , Next.js , React Native and various other technologies, always eager to learn new technologies and tackle challenging projects.
               </motion.p>
 
               <motion.p
@@ -155,8 +155,7 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 0.6 }}
                 viewport={{ once: true }}
               >
-                When I&apos;m not coding, you&apos;ll find me exploring the latest tech trends,
-                contributing to open-source projects, or sharing knowledge with the developer community.
+                When I&apos;m not coding, you&apos;ll find me exploring the latest tech trends, technologies and exploring AI integration.
                 I believe in writing clean, maintainable code and creating applications that users love.
               </motion.p>
             </div>
@@ -169,14 +168,15 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.7 }}
               viewport={{ once: true }}
             >
-              <Link
-                href="mailto:sandeepnayal@example.com"
+              <a
+                href="mailto:sandeepnayal50@gmail.com"
                 className="group inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto"
               >
                 <IconMail className="w-5 h-5" />
                 Contact Me
                 <IconExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-              </Link>
+              </a>
+
 
               <Link
                 href="/resume.pdf"

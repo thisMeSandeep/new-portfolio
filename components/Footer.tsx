@@ -17,11 +17,11 @@ const Footer = () => {
                     <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4 text-gray-600 dark:text-gray-400 text-sm">
                         <div className="flex items-center gap-1">
                             <IconMail size={16} />
-                            <span>hello@sandeep.dev</span>
+                            <span>sandeepnayal50@gmail.com</span>
                         </div>
                         <div className="flex items-center gap-1">
                             <IconPhone size={16} />
-                            <span>+91-XXXXXXXXXX</span>
+                            <span>+91-9305787991</span>
                         </div>
                     </div>
                 </div>
@@ -29,13 +29,13 @@ const Footer = () => {
                 {/* Center Section: Socials */}
                 <div className="flex gap-4">
                     <a
-                        href="#"
+                        href="https://github.com/thisMeSandeep"
                         className="p-2 bg-white/30 dark:bg-gray-800/30 backdrop-blur-xl rounded-xl border border-gray-200/30 dark:border-gray-700/30 hover:bg-white/50 dark:hover:bg-gray-800/50 transition-colors"
                     >
                         <IconBrandGithub size={20} className="text-gray-700 dark:text-gray-300" />
                     </a>
                     <a
-                        href="#"
+                        href="www.linkedin.com/in/sandeepsinghnayal"
                         className="p-2 bg-white/30 dark:bg-gray-800/30 backdrop-blur-xl rounded-xl border border-gray-200/30 dark:border-gray-700/30 hover:bg-white/50 dark:hover:bg-gray-800/50 transition-colors"
                     >
                         <IconBrandLinkedin size={20} className="text-gray-700 dark:text-gray-300" />

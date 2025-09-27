@@ -9,7 +9,7 @@ const words = ["Frontend", "Backend", "Mobile", "Full Stack"]
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-white dark:bg-slate-950 overflow-hidden">
+    <div id="home" className="relative min-h-screen flex items-center justify-center bg-white dark:bg-slate-950 overflow-hidden">
 
       {/* Grid Background */}
       <div className="absolute inset-0 opacity-[0.4] dark:opacity-[0.15]">
@@ -108,9 +108,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-              Building scalable web applications with modern technologies.
-              Experienced in MERN stack, Next js, and delivering
-              high-performent functional applications.
+              Building scalable web applications with modern technologies. Experienced in the MERN stack, Next.js, and delivering high-performance functional applications.
             </p>
           </motion.div>
 

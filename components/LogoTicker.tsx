@@ -2,7 +2,6 @@
 import { motion } from 'motion/react'
 import Image from 'next/image'
 
-// Array of logos with their actual file names from public folder
 const logos = [
     { name: 'React', src: '/react-svgrepo-com.svg' },
     { name: 'Next.js', src: '/next-js-svgrepo-com.svg' },
@@ -46,7 +45,7 @@ const logos = [
 const LogoTicker = () => {
   
 
-    // Duplicate logos for seamless infinite scroll
+    // Duplicate logos for  infinite scroll
     const duplicatedLogos = [...logos, ...logos]
 
     return (
@@ -89,10 +88,10 @@ const LogoTicker = () => {
                             }}
                         >
                             <div className="relative">
-                                {/* Logo Container with Glow Effect */}
+                                {/* Logo Container */}
                                 <div className="relative w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 p-3 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700/40 backdrop-blur-sm transition-all duration-300 group-hover:shadow-lg dark:group-hover:shadow-2xl group-hover:border-blue-200 dark:group-hover:border-blue-800/50 group-hover:bg-blue-50/50 dark:group-hover:bg-blue-950/30">
 
-                                    {/* Subtle Glow Effect */}
+                                    {/*  Glow Effect */}
                                     <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                                     {/* Logo Image */}
@@ -102,7 +101,7 @@ const LogoTicker = () => {
                                             alt={logo.name}
                                             width={48}
                                             height={48}
-                                            className="w-full h-full object-contain filter transition-all duration-300 group-hover:drop-shadow-lg dark:brightness-0 dark:invert dark:group-hover:brightness-100 dark:group-hover:invert-0"
+                                            className="w-full h-full object-contain filter transition-all duration-300 group-hover:drop-shadow-lg "
                                         />
                                     </div>
 

@@ -53,7 +53,7 @@ const tabs = ["All", "Frontend", "Backend"];
 
 const Skills = () => {
     const [activeTab, setActiveTab] = useState("All");
-    const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
+
 
     const filteredLogos =
         activeTab === "All"
@@ -61,9 +61,9 @@ const Skills = () => {
             : logos.filter((logo) => logo.category === activeTab.toLowerCase());
 
     return (
-        <section className="py-16 px-6 bg-slate-50 dark:bg-slate-900 transition-colors duration-300 relative overflow-hidden">
+        <section id="skills" className="py-16 px-6 bg-slate-50 dark:bg-slate-900 transition-colors duration-300 relative overflow-hidden">
 
-            {/* Clean Grid Background Pattern */}
+            {/*  Grid Background Pattern */}
             <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.1]">
                 <div
                     className="w-full h-full"
@@ -132,7 +132,7 @@ const Skills = () => {
                 </motion.div>
 
 
-                {/* Skills Grid - 3 columns on mobile */}
+                {/* Skills Grid 3 columns on mobile */}
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={activeTab}
@@ -156,7 +156,7 @@ const Skills = () => {
 
                                 {/* Icon with Rotation */}
                                 <motion.div
-                                    whileHover={{ rotate: 12 }}
+                                    whileHover={{ rotate: 45 }}
                                     transition={{ type: "spring", stiffness: 300, damping: 15 }}
                                     className="relative mb-2 p-2 rounded-lg bg-slate-100 dark:bg-slate-700 
                      group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 transition-colors"

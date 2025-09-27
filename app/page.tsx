@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import About from "@/components/About"
 import ContactSection from "@/components/ContactSection"
 import DevelopmentApproach from "@/components/DevelopmentApproach"
@@ -8,6 +9,7 @@ import Skills from "@/components/Skills"
 const page = () => {
   return (
     <div>
+      <Navbar />
       <Hero />
       <About />
       <Skills />

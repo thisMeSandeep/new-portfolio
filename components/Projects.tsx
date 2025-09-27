@@ -7,7 +7,7 @@ import { featuredProjects as projects } from "@/data/featuredProjects"
 
 export default function Projects() {
     return (
-        <section className="relative py-24 px-4 sm:px-8 lg:px-16 overflow-hidden">
+        <section id="projects" className="relative py-24 px-4 sm:px-8 lg:px-16 overflow-hidden">
             {/* Grid Background with fading mask */}
             <div className="absolute inset-0 bg-gray-50 dark:bg-gray-950">
                 <div

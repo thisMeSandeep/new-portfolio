@@ -11,7 +11,7 @@ const Navbar = () => {
     const [activeLink, setActiveLink] = useState('Home')
 
     const navLinks = [
-        { name: 'Home', href: '#home' },
+        { name: 'Home', href: '/' },
         { name: 'About', href: '#about' },
         { name: 'Skills', href: '#skills' },
         { name: 'Projects', href: '#projects' },
@@ -21,12 +21,12 @@ const Navbar = () => {
     const socialLinks = [
         {
             name: 'LinkedIn',
-            href: 'https://linkedin.com/in/sandeep',
+            href: 'www.linkedin.com/in/sandeepsinghnayal',
             icon: <IconBrandLinkedin className="w-4 h-4" />
         },
         {
             name: 'GitHub',
-            href: 'https://github.com/sandeep',
+            href: 'https://github.com/thisMeSandeep',
             icon: <IconBrandGithub className="w-4 h-4" />
         },
     ]
@@ -40,12 +40,12 @@ const Navbar = () => {
         >
             {/* Main Navbar Container */}
             <div className="relative">
-               
+
                 {/* Main Navbar */}
                 <div className="relative bg-white/30 dark:bg-black/10 backdrop-blur-md border border-black/10 dark:border-white/10 rounded-full px-10 py-3 ">
                     <div className="flex items-center justify-between gap-12">
 
-                        {/* Logo with Dot Animation */}
+                        {/* Logo with */}
                         <motion.div className="flex items-center gap-2">
                             <div className="relative">
                                 <motion.div
@@ -69,7 +69,7 @@ const Navbar = () => {
                             </Link>
                         </motion.div>
 
-                        {/* Desktop Navigation with Pill Indicator */}
+                        {/* Desktop Navigation*/}
                         <div className="hidden md:flex items-center relative">
                             <div className="flex items-center bg-gray-200/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-full p-1.5 relative">
                                 {navLinks.map((link) => (
@@ -77,11 +77,10 @@ const Navbar = () => {
                                         key={link.name}
                                         href={link.href}
                                         onClick={() => setActiveLink(link.name)}
-                                        className={`relative px-6 py-2.5 text-sm font-medium transition-colors duration-200 whitespace-nowrap rounded-full ${
-                                            activeLink === link.name 
-                                                ? 'text-gray-900 dark:text-white' 
-                                                : 'text-gray-700 dark:text-gray-300'
-                                        }`}
+                                        className={`relative px-6 py-2.5 text-sm font-medium transition-colors duration-200 whitespace-nowrap rounded-full ${activeLink === link.name
+                                            ? 'text-gray-900 dark:text-white'
+                                            : 'text-gray-700 dark:text-gray-300'
+                                            }`}
                                     >
                                         {activeLink === link.name && (
                                             <motion.div
@@ -100,7 +99,7 @@ const Navbar = () => {
                         {/* Right Side Actions */}
                         <div className="flex items-center gap-3">
 
-                            {/* Social Icons with Magnetic Effect */}
+                            {/* Social Icons */}
                             <div className="hidden md:flex items-center gap-1">
                                 {socialLinks.map((social) => (
                                     <motion.a
@@ -129,7 +128,7 @@ const Navbar = () => {
                                 <ThemeToggler />
                             </div>
 
-                            {/* Mobile Menu with Morphing Icon */}
+                            {/* Mobile Menu */}
                             <motion.button
                                 onClick={() => setIsOpen(!isOpen)}
                                 className="md:hidden p-2.5 rounded-full bg-gray-200/70 dark:bg-gray-800/70 backdrop-blur-sm text-gray-600 dark:text-gray-400 border border-gray-300/50 dark:border-gray-700/50"
@@ -147,7 +146,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu with Slide Animation */}
+            {/* Mobile Menu */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div

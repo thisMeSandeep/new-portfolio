@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import LenisWrapper from "@/components/LenisWrapper";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const inter = Inter({
@@ -26,7 +25,6 @@ export default function RootLayout({
         className={`${inter.variable} antialiased`}
       >
         <LenisWrapper>
-          <Navbar />
           {children}
           <Footer />
         </LenisWrapper>

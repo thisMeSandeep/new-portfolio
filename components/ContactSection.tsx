@@ -20,21 +20,15 @@ const ContactSection = () => {
         alert("Message sent successfully!")
     }
 
-    const socialLinks = [
-        { icon: IconBrandGithub, href: "#" },
-        { icon: IconBrandLinkedin, href: "#" },
-        { icon: IconBrandTwitter, href: "#" }
-    ]
-
     return (
-        <section className="relative py-24 px-4 sm:px-8 lg:px-16 bg-gray-50 dark:bg-gray-900">
+        <section id="contact" className="relative py-24 px-4 sm:px-8 lg:px-16 bg-gray-50 dark:bg-gray-900">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <p className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">Get in Touch</p>
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-extralight mb-4 text-gray-900 dark:text-white">Let&#39;s Connect</h2>
                     <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                        Have a project in mind or just want to say hello? I&#39;d love to hear from you.
+                        Have an opportunity in mind or just want to say hello? I&#39;d love to hear from you.
                     </p>
                 </div>
 
@@ -48,9 +42,9 @@ const ContactSection = () => {
 
                         {/* Info Cards */}
                         <div className="space-y-4">
-                            <InfoCard icon={<IconMail size={20} />} title="Email" value="hello@sandeep.dev" />
-                            <InfoCard icon={<IconMapPin size={20} />} title="Location" value="Prayagraj, India" />
-                            <InfoCard icon={<IconPhone size={20} />} title="Response Time" value="Within 24 hours" />
+                            <InfoCard icon={<IconMail size={20} />} title="Email" value="sandeepnayal50@gmail.com" />
+                            <InfoCard icon={<IconMapPin size={20} />} title="Location" value="Lucknow, India" />
+                            <InfoCard icon={<IconPhone size={20} />} title="Phone" value="9305787991" />
                         </div>
 
                         {/* Socials */}
@@ -58,22 +52,16 @@ const ContactSection = () => {
                             <p className="text-gray-600 dark:text-gray-400 mb-2">Follow me</p>
                             <div className="flex gap-4">
                                 <a
-                                    href="#"
+                                    href="https://github.com/thisMeSandeep"
                                     className="p-3 bg-white/40 dark:bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-200/30 dark:border-gray-700/30 transition-colors hover:bg-white/60 dark:hover:bg-gray-800/60"
                                 >
                                     <IconBrandGithub size={20} className="text-gray-700 dark:text-gray-300" />
                                 </a>
                                 <a
-                                    href="#"
+                                    href="www.linkedin.com/in/sandeepsinghnayal"
                                     className="p-3 bg-white/40 dark:bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-200/30 dark:border-gray-700/30 transition-colors hover:bg-white/60 dark:hover:bg-gray-800/60"
                                 >
                                     <IconBrandLinkedin size={20} className="text-gray-700 dark:text-gray-300" />
-                                </a>
-                                <a
-                                    href="#"
-                                    className="p-3 bg-white/40 dark:bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-200/30 dark:border-gray-700/30 transition-colors hover:bg-white/60 dark:hover:bg-gray-800/60"
-                                >
-                                    <IconBrandTwitter size={20} className="text-gray-700 dark:text-gray-300" />
                                 </a>
                             </div>
                         </div>
@@ -106,7 +94,7 @@ const ContactSection = () => {
                                 value={formData.message}
                                 onChange={handleChange}
                                 icon={<IconMessage size={18} />}
-                                placeholder="Tell me about your project..."
+                                placeholder="Write you message..."
                                 textarea
                             />
 
