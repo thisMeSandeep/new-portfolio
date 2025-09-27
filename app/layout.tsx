@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Sandeep Singh Nayal - Full Stack Developer",
     description: "Full Stack Developer specializing in MERN stack, Next.js, and React Native.",
-    images: ["/fevicon.ico"], // same here
+    images: ["/fevicon.ico"], 
   },
   icons: {
     icon: "/fevicon.ico",

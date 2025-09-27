@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "motion/react";
 import { IconCode, IconRocket, IconUsers, IconTarget, IconBulb, IconRefresh } from "@tabler/icons-react";
 import { CardSpotlight } from "./ui/card-spotlight";
@@ -51,10 +50,9 @@ const approachItems = [
 ];
 
 const DevelopmentApproach = () => {
-    const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
     return (
-        <section  className="py-16 px-6 bg-gray-50 dark:bg-gray-900 transition-colors duration-300 relative overflow-hidden">
+        <section className="py-16 px-6 bg-gray-50 dark:bg-gray-900 transition-colors duration-300 relative overflow-hidden">
             {/* Subtle Background Enhancement */}
             <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-white to-gray-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-950 pointer-events-none"></div>
 
@@ -113,7 +111,7 @@ const DevelopmentApproach = () => {
                     transition={{ duration: 0.8, delay: 0.6 }}
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
                 >
-                    {approachItems.map((item, index) => {
+                    {approachItems.map((item) => {
                         const Icon = item.icon;
                         return (
                             <div key={item.title} className="relative">

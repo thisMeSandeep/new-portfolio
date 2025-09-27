@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { IconMail, IconUser, IconMessage, IconSend, IconMapPin, IconPhone, IconBrandLinkedin, IconBrandGithub, IconBrandTwitter } from "@tabler/icons-react"
+import { IconMail, IconUser, IconMessage, IconSend, IconMapPin, IconPhone, IconBrandLinkedin, IconBrandGithub} from "@tabler/icons-react"
 
 const ContactSection = () => {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" })
