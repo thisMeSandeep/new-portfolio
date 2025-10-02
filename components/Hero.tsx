@@ -138,6 +138,8 @@ const Hero = () => {
             >
               <Link
                 href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 text-slate-700 dark:text-slate-300 px-6 py-3 rounded-lg font-medium transition-all duration-200 hover:bg-slate-50 dark:hover:bg-slate-900/50"
               >
                 <IconDownload className="w-5 h-5" />
