@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { IconArrowUp, IconBrandGithub, IconBrandLinkedin, IconMail, IconPhone } from "@tabler/icons-react"
 
 const Footer = () => {
@@ -28,18 +29,22 @@ const Footer = () => {
 
                 {/* Center Section: Socials */}
                 <div className="flex gap-4">
-                    <a
+                    <Link
                         href="https://github.com/thisMeSandeep"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="p-2 bg-white/30 dark:bg-gray-800/30 backdrop-blur-xl rounded-xl border border-gray-200/30 dark:border-gray-700/30 hover:bg-white/50 dark:hover:bg-gray-800/50 transition-colors"
                     >
                         <IconBrandGithub size={20} className="text-gray-700 dark:text-gray-300" />
-                    </a>
-                    <a
-                        href="www.linkedin.com/in/sandeepsinghnayal"
+                    </Link>
+                    <Link
+                        href="https://www.linkedin.com/in/sandeepsinghnayal/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="p-2 bg-white/30 dark:bg-gray-800/30 backdrop-blur-xl rounded-xl border border-gray-200/30 dark:border-gray-700/30 hover:bg-white/50 dark:hover:bg-gray-800/50 transition-colors"
                     >
                         <IconBrandLinkedin size={20} className="text-gray-700 dark:text-gray-300" />
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Right Section: Go to Top */}

@@ -21,7 +21,7 @@ const Navbar = () => {
     const socialLinks = [
         {
             name: 'LinkedIn',
-            href: 'www.linkedin.com/in/sandeepsinghnayal',
+            href: 'https://www.linkedin.com/in/sandeepsinghnayal/',
             icon: <IconBrandLinkedin className="w-4 h-4" />
         },
         {

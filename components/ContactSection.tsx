@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 import { IconMail, IconUser, IconMessage, IconSend, IconMapPin, IconPhone, IconBrandLinkedin, IconBrandGithub} from "@tabler/icons-react"
 
 const ContactSection = () => {
@@ -51,18 +52,22 @@ const ContactSection = () => {
                         <div>
                             <p className="text-gray-600 dark:text-gray-400 mb-2">Follow me</p>
                             <div className="flex gap-4">
-                                <a
+                                <Link
                                     href="https://github.com/thisMeSandeep"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="p-3 bg-white/40 dark:bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-200/30 dark:border-gray-700/30 transition-colors hover:bg-white/60 dark:hover:bg-gray-800/60"
                                 >
                                     <IconBrandGithub size={20} className="text-gray-700 dark:text-gray-300" />
-                                </a>
-                                <a
-                                    href="www.linkedin.com/in/sandeepsinghnayal"
+                                </Link>
+                                <Link
+                                    href="https://www.linkedin.com/in/sandeepsinghnayal/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="p-3 bg-white/40 dark:bg-gray-800/40 backdrop-blur-xl rounded-xl border border-gray-200/30 dark:border-gray-700/30 transition-colors hover:bg-white/60 dark:hover:bg-gray-800/60"
                                 >
                                     <IconBrandLinkedin size={20} className="text-gray-700 dark:text-gray-300" />
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
