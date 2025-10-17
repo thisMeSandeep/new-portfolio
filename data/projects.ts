@@ -46,7 +46,7 @@ const projects = [
   {
     title: "DropCart-E-Commerce Platform",
     description:
-      "A full-stack e-commerce solution built with the MERN stack. Features include product search, filtering, user authentication, shopping cart,Wishlist, payment processing with razorpay, and  order tracking.",  
+      "A full-stack e-commerce solution built with the MERN stack. Features include product search, filtering, user authentication, shopping cart,Wishlist, payment processing with razorpay, and  order tracking.",
     technologies: [
       "React",
       "Node.js",
@@ -57,7 +57,7 @@ const projects = [
       "JWT Authentication",
       "Razorpay",
     ],
-    image:"/project/dropcart.png",
+    image: "/project/dropcart.png",
     github: "https://github.com/thisMeSandeep/E-commerce-Website-MERN",
     live: "https://e-commerce-website-mern-one.vercel.app/",
   },
@@ -116,13 +116,13 @@ const projects = [
     live: "https://dashboard-react-sepia-eight.vercel.app/",
   },
   {
-    title: "Modern Landing page 2",
+    title: "Crafthaven",
     description:
-      "The Modern Landing Page is a sleek and responsive website built with Next.js, TailwindCSS, and Framer Motion to deliver a visually appealing and high-performance experience. ",
+      "The Modern platform to give an online identity to a handcarft business built with Next.js, TailwindCSS, and Framer Motion.",
     technologies: ["Next Js", "Tailwind", "Framer Motion"],
-    image: "/project/landingPage2.png",
-    github: "https://github.com/thisMeSandeep/Modern-AI-landing-page",
-    live: "https://modern-ai-landing-page-peach.vercel.app",
+    image: "/project/crafthaven.png",
+    github: "https://github.com/thisMeSandeep/haathSe",
+    live: "https://haath-se.vercel.app/",
   },
   {
     title: "9 to 9 school",
