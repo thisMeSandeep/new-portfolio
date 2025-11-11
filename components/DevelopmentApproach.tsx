@@ -59,15 +59,15 @@ const DevelopmentApproach = () => {
             <div className="relative z-10 max-w-7xl mx-auto">
                 {/* Header Section */}
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ y: 30 }}
+                    whileInView={{ y: 0 }}
                     transition={{ duration: 0.8 }}
                     className="text-center mb-16"
                 >
                     {/* Badge */}
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
+                        initial={{ scale: 0.8 }}
+                        whileInView={{ scale: 1 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="inline-flex mx-auto items-center gap-2 px-5 py-2 text-sm font-medium rounded-full border border-white/30 bg-white/40 dark:bg-gray-800/40 backdrop-blur-lg shadow-lg text-gray-800 dark:text-gray-200 mb-6 hover:shadow-xl transition-shadow duration-300"
                     >
@@ -77,8 +77,8 @@ const DevelopmentApproach = () => {
 
                     {/* Title */}
                     <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ y: 20 }}
+                        whileInView={{ y: 0 }}
                         transition={{ duration: 0.8, delay: 0.3 }}
                         className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 dark:from-white dark:via-gray-100 dark:to-white bg-clip-text text-transparent"
                     >
@@ -87,8 +87,8 @@ const DevelopmentApproach = () => {
 
                     {/* Description */}
                     <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ y: 20 }}
+                        whileInView={{ y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed"
                     >
@@ -106,9 +106,6 @@ const DevelopmentApproach = () => {
 
                 {/* Approach Cards Grid */}
                 <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 0.8, delay: 0.6 }}
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
                 >
                     {approachItems.map((item) => {

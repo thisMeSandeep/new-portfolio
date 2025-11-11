@@ -76,8 +76,8 @@ const Hero = () => {
           {/* Professional Badge */}
           <motion.div
             className="inline-flex items-center gap-2 bg-slate-50 dark:bg-slate-900/50 border border-slate-200/50 dark:border-slate-800/50 rounded-lg px-4 py-2 mt-10 text-sm text-slate-600 dark:text-slate-400"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: -20 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
@@ -87,8 +87,8 @@ const Hero = () => {
           {/* Main Heading */}
           <motion.div
             className="space-y-4"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 30 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-slate-900 dark:text-white">
@@ -102,8 +102,8 @@ const Hero = () => {
           {/* Professional Description */}
           <motion.div
             className="max-w-2xl mx-auto space-y-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -114,8 +114,8 @@ const Hero = () => {
           {/* Action Buttons */}
           <motion.div
             className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <motion.div
@@ -151,9 +151,6 @@ const Hero = () => {
           {/* Professional Stats/Links */}
           <motion.div
             className="flex items-center justify-center gap-8 pt-12 text-sm text-slate-500 dark:text-slate-400"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
           >
             <motion.div
               className="flex items-center gap-2"
@@ -174,8 +171,8 @@ const Hero = () => {
           {/* Scroll Indicator */}
           <motion.div
             className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-slate-400 dark:text-slate-500"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ y: 10 }}
+            animate={{ y: 0 }}
             transition={{ duration: 0.6, delay: 1 }}
           >
             <motion.span

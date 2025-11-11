@@ -40,8 +40,8 @@ const About = () => {
         {/* Section Header */}
         <motion.div
           className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          whileInView={{ y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
@@ -59,9 +59,6 @@ const About = () => {
             Passionate about crafting
             <motion.span
               className="block text-blue-600 dark:text-blue-400 font-medium"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
               digital experiences
@@ -75,8 +72,8 @@ const About = () => {
           {/* Left Column - Image */}
           <motion.div
             className="order-2 lg:order-1"
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ x: -30 }}
+            whileInView={{ x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
@@ -111,8 +108,8 @@ const About = () => {
           {/* Right Column - Content */}
           <motion.div
             className="order-1 lg:order-2 space-y-8"
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ x: 30 }}
+            whileInView={{ x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
@@ -120,8 +117,8 @@ const About = () => {
             <div className="space-y-6">
               <motion.p
                 className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed"
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ y: 15 }}
+                whileInView={{ y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
                 viewport={{ once: true }}
               >
@@ -133,8 +130,8 @@ const About = () => {
 
               <motion.p
                 className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed"
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ y: 15 }}
+                whileInView={{ y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
                 viewport={{ once: true }}
               >
@@ -145,8 +142,8 @@ const About = () => {
 
               <motion.p
                 className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed"
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ y: 15 }}
+                whileInView={{ y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
                 viewport={{ once: true }}
               >
@@ -158,8 +155,8 @@ const About = () => {
             {/* Action Buttons */}
             <motion.div
               className="flex flex-col sm:flex-row gap-4 pt-4"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              whileInView={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.7 }}
               viewport={{ once: true }}
             >
@@ -187,9 +184,6 @@ const About = () => {
             {/* Quick Info */}
             <motion.div
               className="flex items-center gap-6 pt-6 text-sm text-slate-500 dark:text-slate-400"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
               viewport={{ once: true }}
             >
               <div className="flex items-center gap-2">
